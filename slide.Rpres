@@ -1,0 +1,36 @@
+<style>
+.reveal pre code { 
+  font-size: 20px;
+}
+</style>
+
+Movie Rating
+========================================================
+author: Tang Chun Wei
+date: 28 Jan 2016
+
+Introduction
+========================================================
+This is a simple app displaying some movie rating and relavent info read from a csv file.
+Below shows the summary of the data inside the file
+```{r}
+data <- read.csv('Movie.csv')
+summary(data)
+```
+
+Raw Data
+========================================================
+Here are some data extracted from the file
+```{r}
+head(data)
+```
+
+Input
+========================================================
+For the app, a range slider has been created so that user can filter the data based on the movie rating.
+
+Output
+========================================================
+Based on the filtered data, there are 2 outputs:-
+- A histogram showing the frequncy of rating
+- A data table showing relevant information
