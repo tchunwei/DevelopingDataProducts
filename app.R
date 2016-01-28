@@ -11,7 +11,7 @@ ui <- fluidPage(
     h3("Help"),
     p("This is a simple app displaying some movie rating and relavent info read from a csv file. Use the slider above to filter the rating. Results should be displayed according to the rating chosen."),
     br(),
-    p("Github link: ")
+    p("Github link: https://github.com/tchunwei/DevelopingDataProducts")
   ),
   mainPanel(
     plotOutput('hist'),
